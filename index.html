@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Library</h1></header>
+
+    <main>
+      <div class="addBookForm invisible">
+        <div class="form">
+          <h2>Add a Book to your List</h2>
+          <input class="bookTitle" type="text" placeholder="Book Title" />
+          <input class="bookAuthor" type="text" placeholder="Author" />
+          <input
+            class="bookPages"
+            type="number"
+            placeholder="Number of pages"
+          />
+          <label for="read">Have you read it?</label>
+          <input type="checkbox" name="read" id="read" class="readCheckBox" />
+
+          <button>Add Book</button>
+        </div>
+      </div>
+
+      <button class="addBook">Add +</button>
+      <div class="bookList">
+        <div class="bookCard">
+          <p class="author"><span>Author : </span>J. K. Rowling</p>
+          <p class="title"><span>Title : </span>Harry Potter</p>
+          <p class="pages"><span>pages : </span> 631</p>
+
+          <div class="notRead">not read</div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

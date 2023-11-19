@@ -1,0 +1,205 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(241, 241, 241);
+}
+
+header > h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 0;
+  padding-top: 1vh;
+  font-family: "Arial";
+}
+
+header {
+  color: black;
+  box-shadow: 2px 0px 5px 0px gray;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color: white;
+}
+
+.addBook {
+  box-shadow: -5px 4px 0px 1px #3dc21b;
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 24px 39px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #2f6627;
+
+  margin-top: 2rem;
+}
+
+.addBook:hover {
+  box-shadow: -3px 2px 0px 1px #38b319;
+}
+
+main {
+  display: flex;
+  justify-content: cetner;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid grey;
+
+  border-radius: 3rem;
+
+  filter: none;
+
+  height: 40vh;
+  width: 20vw;
+
+  margin: 0 auto;
+  margin-top: 30vh;
+
+  background-color: white;
+  box-shadow: 5px 5px 5px 5px 5px black;
+}
+
+.form > input {
+  height: 2.5rem;
+  width: 15rem;
+  border: 2px solid grey;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  font-family: "Arial";
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form > button {
+  box-shadow: -5px 4px 0px 1px #3dc21b;
+  background-color: #44c767;
+  border-radius: 28px;
+  border: 1px solid #18ab29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Verdana;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 19px 80px;
+  text-decoration: none;
+  text-shadow: 0px 0px 0px #2f6627;
+
+  margin-top: 1rem;
+}
+
+.form > button:hover {
+  box-shadow: -3px 2px 0px 1px #38b319;
+}
+
+.addBookForm {
+  background-color: rgba(0, 0, 0, 0.324);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.form > h2 {
+  font-size: 2rem;
+  padding-bottom: 3rem;
+  font-family: "Arial";
+}
+
+.invisible {
+  display: none;
+}
+
+.bookCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  box-shadow: -3px 3px 0px 1px #bdbdbd;
+  background-color: white;
+
+  height: 15rem;
+  width: 18rem;
+  font-family: "Arial";
+
+  border-radius: 2rem;
+  margin: 0 1rem;
+  margin-top: 3rem;
+}
+
+.bookCard > p {
+  font-size: 1.3rem;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.bookCard > p > span {
+  font-weight: bold;
+}
+
+.read {
+  background-color: #3dc21b;
+  width: 50%;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.notRead {
+  background-color: #c21b1b;
+  width: 50%;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.bookList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60vw;
+}
+
+#read {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+}
+
+label {
+  font-size: 1.3rem;
+  font-family: "Arial";
+  display: inline-block;
+}

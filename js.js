@@ -14,11 +14,37 @@ const readCheckBox = document.querySelector(".readCheckBox");
 let bookList = [];
 
 //object constructor
-function Book(author, title, pages, read) {
-  (this.author = author),
-    (this.title = title),
-    (this.pages = pages),
-    (this.read = read);
+
+class Book {
+  #author;
+  #title;
+  #pages;
+  #read;
+
+  constructor(author, title, pages, read) {
+    this.#author = author;
+    this.#title = title;
+    this.#pages = pages;
+    this.#read = read;
+  }
+
+  get author() {
+    return this.#author;
+  }
+  get title() {
+    return this.#title;
+  }
+  get pages() {
+    return this.#pages;
+  }
+
+  get read() {
+    return this.#read;
+  }
+
+  set read(read) {
+    this.#read = read;
+  }
 }
 
 //input visually working

@@ -15,36 +15,29 @@ let bookList = [];
 
 //object constructor
 
-class Book {
-  #author;
-  #title;
-  #pages;
-  #read;
+function Book(author, title, pages, read) {
+  let _author = author;
+  let _title = title;
+  let _pages = pages;
+  let _read = read;
 
-  constructor(author, title, pages, read) {
-    this.#author = author;
-    this.#title = title;
-    this.#pages = pages;
-    this.#read = read;
-  }
-
-  get author() {
-    return this.#author;
-  }
-  get title() {
-    return this.#title;
-  }
-  get pages() {
-    return this.#pages;
-  }
-
-  get read() {
-    return this.#read;
-  }
-
-  set read(read) {
-    this.#read = read;
-  }
+  return {
+    get author() {
+      return _author;
+    },
+    get title() {
+      return _title;
+    },
+    get pages() {
+      return _pages;
+    },
+    get read() {
+      return _read;
+    },
+    set read(read) {
+      _read = read;
+    },
+  };
 }
 
 //input visually working
@@ -126,6 +119,8 @@ document.addEventListener("click", (e) => {
 
         if (element.title == titleComparisonNotRead.slice(8)) {
           element.read = true;
+          console.log(element);
+          element.sayAuthor();
         }
       }
 
@@ -144,6 +139,8 @@ document.addEventListener("click", (e) => {
 
         if (element.title == titleComparisonRead.slice(8)) {
           element.read = false;
+          console.log(element);
+          element.sayAuthor();
         }
       }
 
